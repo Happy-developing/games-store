@@ -1,7 +1,6 @@
 import React,{useEffect} from "react";
 import Home from "./pages/Home";
-
-
+import GlobalStyles from "./components/GlobalStyles";
 
 
 function App() {
@@ -9,9 +8,9 @@ function App() {
   
   return (
     <div>
-      <h1>hello games</h1>
+      <GlobalStyles/>
       <Home/>
-    </div>
+    </div> 
   );
 }
 
