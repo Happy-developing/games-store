@@ -4,6 +4,7 @@ import {loadGames} from "../actions/gamesAction";
 import {motion} from "framer-motion";
 import styled from "styled-components";
 import Game from '../components/Game';
+import GameDetails from '../components/GameDetails';
 
 const Home = ()=>{
     
@@ -17,6 +18,7 @@ const {popular,upcoming,newGames} = useSelector((state)=>state.games);
 
     return (
         <GamesList>
+          {/* <GameDetails/> */}
           <h2>Upcoming Games</h2>
           <Games>
             {upcoming.map(game=>
