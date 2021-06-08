@@ -37,4 +37,5 @@ export const upcomingGameURL = () =>`${base_url}${upcoming_games}`;
 export const newGameURL = () =>`${base_url}${newGames}`;
 export const gameDetailsURL = (game_id) =>`http://api.rawg.io/api/games/${game_id}?key=${api_key}`;
 export const screenShotURL = (game_id) =>`http://api.rawg.io/api/games/${game_id}/screenshots?key=${api_key}`;
+export const searchGameURL = (game_name) => `https://api.rawg.io/api/games?search=${game_name}&key=${api_key}&page_size=9`;
 
